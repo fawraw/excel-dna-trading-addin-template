@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace TradingAddin.Services;
 
@@ -55,12 +56,3 @@ public class BackendClient
     }
 }
 
-// Trivial shim so we don't pull in Microsoft.Extensions.Logging.Abstractions in every file.
-namespace TradingAddin.Services
-{
-    using Microsoft.Extensions.Logging;
-    internal static class LoggingShim
-    {
-        public static ILogger<T> Get<T>() => Logging.AddInLogging.CreateLogger<T>();
-    }
-}

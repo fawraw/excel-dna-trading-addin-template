@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Identity.Client;
 
@@ -80,11 +81,3 @@ public class AuthService
     }
 }
 
-internal static class LinqShim
-{
-    public static T? FirstOrDefault<T>(this System.Collections.Generic.IEnumerable<T> src)
-    {
-        foreach (var item in src) return item;
-        return default;
-    }
-}
