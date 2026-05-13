@@ -29,7 +29,7 @@
     <PackageReference Include="Microsoft.Identity.Client" Version="4.62.0" />
 
     <!-- Logging (optional) -->
-    <PackageReference Include="Microsoft.Extensions.Logging"           Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging"           Version="10.0.8" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console"   Version="6.0.0" />
   </ItemGroup>
 
