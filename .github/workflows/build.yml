@@ -1,0 +1,37 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build add-in (.NET 6, Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up .NET 6
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore
+        run: dotnet restore src/TradingAddin/TradingAddin.csproj
+
+      - name: Build (Release)
+        run: dotnet build src/TradingAddin/TradingAddin.csproj -c Release --no-restore
+
+      - name: Confirm packaged .xll exists
+        shell: pwsh
+        run: |
+          $outDir = "src/TradingAddin/bin/Release/net6.0-windows"
+          $files  = Get-ChildItem -Path $outDir -Filter "*.xll" -ErrorAction SilentlyContinue
+          if ($files.Count -eq 0) {
+            Write-Error "No packaged .xll found in $outDir"
+            exit 1
+          }
+          $files | ForEach-Object { Write-Host "Found: $($_.Name)" }
