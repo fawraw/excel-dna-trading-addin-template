@@ -89,9 +89,9 @@ Excel raises `SheetChange` only when a user **types** into a cell. Cells that re
 
 Three common paths:
 
-1. **Group policy** -- push the `.xll` to `%AppData%/Microsoft/AddIns/` and the registry key `HKCU\Software\Microsoft\Office\<version>\Excel\Add-in Manager` that references it.
-2. **MSI / MSIX installer** -- wrap the .xll in WiX or Advanced Installer.
-3. **SCCM** / Intune -- script the same registry edits as group policy.
+1. **Group policy**: push the `.xll` to `%AppData%/Microsoft/AddIns/` and the registry key `HKCU\Software\Microsoft\Office\<version>\Excel\Add-in Manager` that references it.
+2. **MSI / MSIX installer**: wrap the .xll in WiX or Advanced Installer.
+3. **SCCM** / Intune: script the same registry edits as group policy.
 
 `install.ps1` does the per-user variant manually. For an enterprise rollout, lift the logic into your standard package format.
 

@@ -67,7 +67,7 @@ Excel start
 Excel COM is single-threaded apartment. Any code that touches an Excel object
 must run on the main thread. The watcher dispatches its sweep back to the
 main thread via `ExcelAsyncUtil.QueueAsMacro`. Don't call `app.Range[...]`
-from a background thread directly -- you'll get an `0x80010001 (RPC_E_CALL_REJECTED)`
+from a background thread directly: you'll get an `0x80010001 (RPC_E_CALL_REJECTED)`
 exception or worse.
 
 HTTP I/O and logging are fine off-thread.
