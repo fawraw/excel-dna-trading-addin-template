@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TradingAddin</RootNamespace>
+    <AssemblyName>TradingAddin</AssemblyName>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x64</PlatformTarget>
+    <ExcelAddInExplicitExports>false</ExcelAddInExplicitExports>
+    <ExcelAddInExplicitRegistration>false</ExcelAddInExplicitRegistration>
+    <ExcelAddInPackXll>true</ExcelAddInPackXll>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Excel-DNA core -->
+    <PackageReference Include="ExcelDna.AddIn"        Version="1.8.0" />
+    <PackageReference Include="ExcelDna.IntelliSense" Version="1.8.0" />
+    <PackageReference Include="ExcelDna.Integration" Version="1.8.0" />
+
+    <!-- HTTP + JSON for talking to a back-end -->
+    <PackageReference Include="System.Net.Http.Json" Version="6.0.1" />
+
+    <!-- Microsoft authentication (optional, comment out if you don't use Entra ID) -->
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.62.0" />
+
+    <!-- Logging (optional) -->
+    <PackageReference Include="Microsoft.Extensions.Logging"           Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console"   Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

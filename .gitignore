@@ -1,0 +1,24 @@
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+dist/
+
+# Build artifacts
+*.dll
+*.pdb
+*.xll
+packages/
+*.lock.json
+project.lock.json
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

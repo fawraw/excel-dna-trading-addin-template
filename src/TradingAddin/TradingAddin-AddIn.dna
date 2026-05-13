@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DnaLibrary Name="TradingAddin" RuntimeVersion="v4.0" xmlns="http://schemas.excel-dna.net/addin/2018/05/dnalibrary">
+  <ExternalLibrary Path="TradingAddin.dll" ExplicitExports="false" LoadFromBytes="true" Pack="true" IncludePdb="false" />
+  <CustomUI>
+    <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+      <!-- Filled in dynamically by Ribbon.cs at load time -->
+    </customUI>
+  </CustomUI>
+</DnaLibrary>
