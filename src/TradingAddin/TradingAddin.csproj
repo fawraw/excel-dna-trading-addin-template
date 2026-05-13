@@ -23,7 +23,7 @@
     <PackageReference Include="ExcelDna.Interop"      Version="15.0.1" />
 
     <!-- HTTP + JSON for talking to a back-end -->
-    <PackageReference Include="System.Net.Http.Json" Version="6.0.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="10.0.8" />
 
     <!-- Microsoft authentication (optional, comment out if you don't use Entra ID) -->
     <PackageReference Include="Microsoft.Identity.Client" Version="4.62.0" />
