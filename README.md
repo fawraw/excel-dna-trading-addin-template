@@ -1,5 +1,10 @@
 # excel-dna-trading-addin-template
 
+[![License: MIT](https://img.shields.io/github/license/fawraw/excel-dna-trading-addin-template)](LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/fawraw/excel-dna-trading-addin-template)](https://github.com/fawraw/excel-dna-trading-addin-template/releases)
+![.NET](https://img.shields.io/badge/.NET-6.0-512BD4)
+![Excel-DNA](https://img.shields.io/badge/Excel--DNA-1.8-217346)
+
 A production-grade starting point for a trading-floor Excel add-in built on [Excel-DNA](https://excel-dna.net/). Comes with the wiring you actually need (ribbon, MSAL auth, HTTP back-end client, cell watcher, settings file, packaging scripts) and none of the AI boilerplate you don't.
 
 Designed for the case where:
