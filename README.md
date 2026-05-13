@@ -1,5 +1,6 @@
 # excel-dna-trading-addin-template
 
+[![Build](https://github.com/fawraw/excel-dna-trading-addin-template/actions/workflows/build.yml/badge.svg)](https://github.com/fawraw/excel-dna-trading-addin-template/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/github/license/fawraw/excel-dna-trading-addin-template)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/fawraw/excel-dna-trading-addin-template)](https://github.com/fawraw/excel-dna-trading-addin-template/releases)
 ![.NET](https://img.shields.io/badge/.NET-6.0-512BD4)
