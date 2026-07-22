@@ -20,17 +20,17 @@
     <PackageReference Include="ExcelDna.AddIn"        Version="1.9.0" />
     <PackageReference Include="ExcelDna.IntelliSense" Version="1.9.0" />
     <PackageReference Include="ExcelDna.Integration"  Version="1.9.0" />
-    <PackageReference Include="ExcelDna.Interop"      Version="15.0.1" />
+    <PackageReference Include="ExcelDna.Interop"      Version="16.0.0" />
 
     <!-- HTTP + JSON for talking to a back-end -->
-    <PackageReference Include="System.Net.Http.Json" Version="6.0.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="10.0.10" />
 
     <!-- Microsoft authentication (optional, comment out if you don't use Entra ID) -->
-    <PackageReference Include="Microsoft.Identity.Client" Version="4.84.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.86.1" />
 
     <!-- Logging (optional) -->
-    <PackageReference Include="Microsoft.Extensions.Logging"           Version="10.0.8" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console"   Version="10.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging"           Version="10.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console"   Version="10.0.10" />
   </ItemGroup>
 
 </Project>
